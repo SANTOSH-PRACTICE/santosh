@@ -1,0 +1,48 @@
+<div class="bootstrap-wrapper">
+    <div class="container" >
+        
+<div class="row" >
+  
+    <!-- this is not working start -->
+     <div class="col-md-6 offset-md-3">
+      <mat-card>
+        <div class="container text-center">
+
+           <img src="../../../assets/logo.png.jfif" alt=""> 
+        </div>
+    <h1 class="text-center">Resister Here!!</h1>
+    <!-- {{user |json}} -->
+    <form >
+         <!--Username-->
+         <div class="container">
+          <div class="row mt20">
+              <div class="col-md-6 offset-md-3 text-center">
+  
+                  <h1>User Resister</h1>
+                  <button (click)="formSubmituser()" type="submit" mat-raised-button color="primary"> User Resister</button>
+<br>
+<br>
+                  <h1>Admin Resister</h1>
+                  <button (click)="formSubmitadmin()" type="submit" mat-raised-button color="accent"> Admin Resister</button>
+
+
+                  
+                  
+              </div>
+          </div>
+      </div>
+
+<!-- button add-->
+              <!-- <div class="container text-center">
+                <button (click)="formSubmit()" type="submit" mat-raised-button color="primary"> Resister</button>
+                <button (click)="clear()" style="margin-left: 20px;" mat-raised-button color="accent"> clear</button>
+              </div> -->
+    </form>
+  </mat-card>
+
+    </div>
+   
+       </div>
+    </div>
+</div>
+

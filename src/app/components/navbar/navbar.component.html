@@ -1,0 +1,46 @@
+<!-- <h1>This is nav bar</h1>  -->
+<mat-toolbar color="primary">
+    <a 
+    routerLink="/"
+    mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu_book</mat-icon>
+    </a>
+    <span>Exam Portal</span>
+    <span class="example-spacer"></span>
+    <a 
+    *ngIf="!isLoggedIn"
+    routerLink="/login"
+
+    mat-icon-button class="example-icon favorite-icon mr40" aria-label="Example icon-button with heart icon">
+      <!-- <mat-icon></mat-icon> -->
+      Login
+    </a>
+    <!-- inted of routerLink use href -->
+    <a 
+    *ngIf="!isLoggedIn"
+    routerLink="/signup"
+
+    mat-icon-button class="example-icon favorite-icon ml40 mr40" aria-label="Example icon-button with heart icon">
+        <!-- <mat-icon></mat-icon> -->
+        Resister
+    </a>
+  
+    <a (click)="logout()"
+    *ngIf="isLoggedIn"
+
+    mat-icon-button class="example-icon favorite-icon ml40 mr40" aria-label="Example icon-button with heart icon">
+        <!-- <mat-icon></mat-icon> -->
+        Logout
+    </a>
+    <button 
+    *ngIf="isLoggedIn"
+
+    class="example-icon favorite-icon ml20 mr20" 
+    mat-button
+    routerLink="/admin/profile"
+    aria-label="Example icon-button with heart icon"
+    style="margin-right: 1000px;">
+        <!-- <mat-icon></mat-icon> -->
+       {{user}}
+    </button>
+  </mat-toolbar>
